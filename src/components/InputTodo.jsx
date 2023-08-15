@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const InputTodo = ({ addTodoItem }) => {
+function InputTodo({ addTodoItem }) {
   const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
 
@@ -34,5 +34,5 @@ const InputTodo = ({ addTodoItem }) => {
       <span className="submit-warning">{message}</span>
     </>
   );
-};
+}
 export default InputTodo;
